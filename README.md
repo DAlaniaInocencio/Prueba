@@ -15,7 +15,7 @@ Antes de empezar, asegúrate de tener instalado lo siguiente:
 - [PHP 8.0+](https://www.php.net/downloads.php)
 - [Composer](https://getcomposer.org/download/)
 - [MySQL](https://dev.mysql.com/downloads/) u otra base de datos compatible
-- [Laravel 9.x](https://laravel.com/docs/9.x)
+- [Laravel 11.x](https://laravel.com/docs/11.x)
 
 ## Instalación
 
