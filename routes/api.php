@@ -9,9 +9,6 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserControllers;
 use App\Http\Controllers\PostsControllers;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -23,7 +20,6 @@ Route::post('auth/register', [AuthController::class, 'create']);
 
    //Inicialmente
 Route::middleware('auth:sanctum')->group(function(){
-    // Route::get('users', [UserControllers::class, 'getall']);
     Route::prefix('users')->group(function () {
         Route::get('/', [UserControllers::class, 'getall']);
         Route::post('/', [UserControllers::class, 'create']);
